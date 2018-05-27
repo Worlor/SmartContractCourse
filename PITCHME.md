@@ -152,3 +152,20 @@ Objectifs : Pouvoir permettre au propriétaire du smart contract de pouvoir reti
 * Déploiement sur le reseau testnet
 * Tutoriel sur le développement avec Solidity
 * Travaux Pratiques 
+
+---
+
+## Pour la prochaine fois 
+
+Prévoir une synchro Geth sur le reseau rinkeby :
+
+* Télécharger Geth : https://bit.ly/2ax4BDk
+
+Dans la console :
+```
+geth --rinkeby account new
+
+./build/bin/geth --rinkeby --rpc --rpcapi db,eth,net,web3,personal --unlock="<adresse récuperé sur la commande precedente>"
+```
+
+A faire la veille de notre prochaine réunion, peut durer plusieurs heures si la connexion est lente
