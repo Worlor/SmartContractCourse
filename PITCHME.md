@@ -34,17 +34,18 @@ Et également un fichier truffle.config pour configurer les réseaux où déploy
 
 --- 
 
-``` Solidity
-pragma solidity ^0.4.8;
-contract Partage {
-  mapping (address => uint) partages;
- 
-  function addPartage(uint partage) public {
-    partages[msg.sender] = getPartages(msg.sender) + partage;
-  }
- 
-  function getPartages(address addr) public view returns(uint) {
-    return partages[addr];
-  }
-}
-```
+* Ouvrer le dossier dans Visual Studio Code
+* Dans le dossier "contracts" créer un fichier "partage.sol"
+
+Un contract est un équivalent d'une classe dans un langage comme Java. Voyons voir ça avec un contrat simple de portefeuille partagé entre utilisateurs
+
+---?code=partage.sol&title=Partage.sol
+
+@[1](Prépocesseur indiquant la version de Solidity utilisé)
+@[4](Attribut mapping : structure de données correspond à un Map<Adress, Int>, les attributs sont sauvegardés dans la blockchain)
+@[6-8](Fonction permettant de déposer de l'argent)
+@[10-12](Fonction pour récuperer les différentes parts)
+
+---
+
+### Tests du Smart Contract
