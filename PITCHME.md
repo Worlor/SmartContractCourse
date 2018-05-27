@@ -10,3 +10,10 @@
 
 ---
 
+### Création du projet
+
+```dos
+mkdir projet
+cd projet 
+truffle init
+```
