@@ -2,6 +2,12 @@
 
 ---
 
+## Introduction
+
+Ce tutoriel nous permettras de nous familiariser avec les outils dédiés au développement de Smart Contract Ethereum ainsi que leurs déploiement
+
+---
+
 ### Outils nécessaires :
 
 * NodeJS (v8+)
@@ -30,7 +36,7 @@ Truffle va mettre en place le projet
 * **migrations** - Dossier pour les migrations (scripts permettant le déploiement du smart contract)
 * **test** - Tests façon Mocha pour les contracts
 
-Et également un fichier truffle.config pour configurer les réseaux où déployer les contracts
+Et également un fichier truffle.js contenant la configuration des réseaux Ethereum où seront déployés les contracts
 
 --- 
 
@@ -127,3 +133,22 @@ truffle migrate --network development
 ```
 
 Dans Ganache, verifiez dans l'onglet transactions que le déploiement de votre contract à bien eu lieu 
+
+--- 
+
+## Amélioration du Smart Contract
+
+Documentation de Solidity : http://solidity.readthedocs.io/en/v0.4.24/
+
+Executer du code Solidity dans le navigateur : https://ethereum.github.io/browser-solidity/
+
+Objectifs : Pouvoir permettre au propriétaire du smart contract de pouvoir retirer les fonds.
+
+
+--- 
+
+## A venir
+
+* Déploiement sur le reseau testnet
+* Tutoriel sur le développement avec Solidity
+* Travaux Pratiques 
