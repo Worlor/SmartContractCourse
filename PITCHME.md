@@ -78,11 +78,10 @@ truffle test
 
 ## Déploiement dans une blockchain locale
 
-Ouvrez Ganache :
+Ganache simule un noeud ethereum ainsi qu'une blockchain active. Elle crée également une dizaine de compte avec des ethers dessus.
 
 ![Ganache](https://cdn-images-1.medium.com/max/800/1*5cApmJQCnFBpYRJ_47emIg.png)
 
-Ganache simule un noeud ethereum ainsi qu'une blockchain active. Elle crée également une dizaine de compte avec des ethers dessus.
 
 --- 
 
