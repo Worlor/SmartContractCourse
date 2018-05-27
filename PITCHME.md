@@ -168,4 +168,4 @@ geth --rinkeby account new
 ./build/bin/geth --rinkeby --rpc --rpcapi db,eth,net,web3,personal --unlock="<adresse récuperé sur la commande precedente>"
 ```
 
-A faire la veille de notre prochaine réunion, peut durer plusieurs heures si la connexion est lente
+A faire la veille de notre prochaine réunion, peut durer plusieurs heures si la connexion est lente.
