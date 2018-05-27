@@ -49,3 +49,16 @@ Un contract est un équivalent d'une classe dans un langage comme Java. Voyons v
 ---
 
 ### Tests du Smart Contract
+
+Lien : https://bit.ly/2Lzqi9e
+
+Installons quelques dependances :
+
+* npm init
+* npm install -D chai chai-as-promised chai-bignumber
+
+---?code=partage.test.js&title=Test partage
+
+@[1-2](Truffle injecte automatiquement quelques dépendances comme Web3 qui permet de communiquer avec la blockchain)
+@[17-21](Test de création du contrat)
+@[24-31](Test des fonctions du contrat)
