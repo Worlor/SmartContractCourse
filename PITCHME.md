@@ -62,3 +62,69 @@ Installons quelques dependances :
 @[1-2](Truffle injecte automatiquement quelques dépendances comme Web3 qui permet de communiquer avec la blockchain)
 @[17-21](Test de création du contrat)
 @[24-31](Test des fonctions du contrat)
+
+---
+
+### Tests
+
+Lien : https://bit.ly/2ITjaTm
+
+Lancez le test : 
+```cmd
+truffle test
+```
+
+---
+
+## Déploiement dans une blockchain locale
+
+Ouvrez Ganache :
+
+![Ganache](https://cdn-images-1.medium.com/max/800/1*5cApmJQCnFBpYRJ_47emIg.png)
+
+Ganache simule un noeud ethereum ainsi qu'une blockchain active. Elle crée également une dizaine de compte avec des ethers dessus.
+
+--- 
+
+## Création de la migration
+
+Créer un fichier migrations/2_deploy_contracts.js
+
+```js
+var Partages = artifacts.require('Partages')
+
+module.exports = function (deployer, network, accounts) {
+    deployer.deploy(Partages)
+}
+```
+
+Lien : https://bit.ly/2KZylen
+
+---
+
+### Configuration du serveur Ganache
+
+Modifier la configuration de truffle dans le fichier truffle.js
+
+```js
+module.exports = {
+  networks: {
+    development: {
+      host: 'localhost',
+      port: 7545,
+      network_id: '*'
+    }
+  }
+}
+```
+
+--- 
+
+### Déploiement du contrat !
+
+Dans la console taper la commande pour lancer la migration :
+```cmd
+truffle migrate --network development
+```
+
+Dans Ganache, verifiez dans l'onglet transactions que le déploiement de votre contract à bien eu lieu 
