@@ -4,7 +4,7 @@
 
 ## Introduction
 
-Ce tutoriel nous permettras de nous familiariser avec les outils dédiés au développement de Smart Contract Ethereum ainsi que leurs déploiement
+Ce tutoriel nous permettra de nous familiariser avec les outils dédiés au développement de Smart Contract Ethereum ainsi que leurs déploiements
 
 ---
 
@@ -40,17 +40,17 @@ Et également un fichier truffle.js contenant la configuration des réseaux Ethe
 
 --- 
 
-* Ouvrer le dossier dans Visual Studio Code
+* Ouvrez le dossier dans Visual Studio Code
 * Dans le dossier "contracts" créer un fichier "partage.sol"
 
 Un contract est un équivalent d'une classe dans un langage comme Java. Voyons voir ça avec un contrat simple de portefeuille partagé entre utilisateurs
 
 ---?code=partage.sol&title=Partage.sol
 
-@[1](Prépocesseur indiquant la version de Solidity utilisé)
-@[4](Attribut mapping : structure de données correspond à un Map<Adress, Int>, les attributs sont sauvegardés dans la blockchain)
+@[1](Préprocesseur indiquant la version de Solidity utilisée)
+@[4](Attribut mapping : structure de données correspondant à un Map<Adress, Int>, les attributs sont sauvegardés dans la blockchain)
 @[6-8](Fonction permettant de déposer de l'argent)
-@[10-12](Fonction pour récuperer les différentes parts)
+@[10-12](Fonction pour récupérer les différents partages)
 
 ---
 
@@ -58,7 +58,7 @@ Un contract est un équivalent d'une classe dans un langage comme Java. Voyons v
 
 Lien : https://bit.ly/2Lzqi9e
 
-Installons quelques dependances :
+Installons quelques dépendances :
 
 * npm init
 * npm install -D chai chai-as-promised chai-bignumber
@@ -84,7 +84,7 @@ truffle test
 
 ## Déploiement dans une blockchain locale
 
-Ganache simule un noeud ethereum ainsi qu'une blockchain active. Elle crée également une dizaine de compte avec des ethers dessus.
+Ganache simule un noeud ethereum ainsi qu'une blockchain active. Elle crée également une dizaine de comptes avec des ethers dessus.
 
 ![Ganache](https://cdn-images-1.medium.com/max/800/1*5cApmJQCnFBpYRJ_47emIg.png)
 
@@ -132,7 +132,7 @@ Dans la console taper la commande pour lancer la migration :
 truffle migrate --network development
 ```
 
-Dans Ganache, verifiez dans l'onglet transactions que le déploiement de votre contract à bien eu lieu 
+Dans Ganache, vérifiez dans l'onglet Transactions que le déploiement de votre contract a bien eu lieu 
 
 --- 
 
@@ -140,7 +140,7 @@ Dans Ganache, verifiez dans l'onglet transactions que le déploiement de votre c
 
 Documentation de Solidity : http://solidity.readthedocs.io/en/v0.4.24/
 
-Executer du code Solidity dans le navigateur : https://ethereum.github.io/browser-solidity/
+Exécuter du code Solidity dans le navigateur : https://ethereum.github.io/browser-solidity/
 
 Objectifs : Pouvoir permettre au propriétaire du smart contract de pouvoir retirer les fonds.
 
